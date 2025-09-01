@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>순천시 병원 현황</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+            color: #1e293b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 1rem;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            padding: 2.5rem;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            color: #0f172a;
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        p {
+            color: #64748b;
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 0.5rem;
+            text-align: left;
+        }
+        th, td {
+            padding: 1rem;
+            background-color: #e2e8f0;
+            border-radius: 0.5rem;
+        }
+        th {
+            background-color: #475569;
+            color: #ffffff;
+            font-weight: 600;
+        }
+        td {
+            font-weight: 500;
+            color: #1e293b;
+        }
+        tr:last-child th, tr:last-child td {
+            background-color: #1e293b;
+            color: #ffffff;
+            font-weight: 700;
+        }
+        .total-row th, .total-row td {
+            font-size: 1.2rem;
+            border-top: 2px solid #94a3b8;
+        }
+        .info-box {
+            background-color: #f1f5f9;
+            border: 1px solid #cbd5e1;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            text-align: left;
+        }
+        .info-box strong {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #0f172a;
+        }
+        .info-box p {
+            margin: 0;
+            color: #475569;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <div class="container mx-auto p-8 rounded-2xl shadow-lg">
+        <h1 class="text-4xl font-extrabold mb-2">순천시 병원 현황</h1>
+        <p class="text-gray-600 mb-8">전라남도 순천시의 병원(의원, 한의원, 치과의원) 개수 정보입니다.</p>
+        
+        <div class="overflow-x-auto">
+            <table class="w-full text-center">
+                <thead>
+                    <tr>
+                        <th class="px-6 py-3 bg-slate-700 text-white rounded-l-lg">구분</th>
+                        <th class="px-6 py-3 bg-slate-700 text-white rounded-r-lg">개수</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="my-2">
+                        <td class="px-6 py-4 bg-slate-200 rounded-l-lg rounded-r-lg">의원</td>
+                        <td class="px-6 py-4 bg-slate-200 rounded-l-lg rounded-r-lg">49</td>
+                    </tr>
+                    <tr class="my-2">
+                        <td class="px-6 py-4 bg-slate-200 rounded-l-lg rounded-r-lg">한의원</td>
+                        <td class="px-6 py-4 bg-slate-200 rounded-l-lg rounded-r-lg">55</td>
+                    </tr>
+                    <tr class="my-2">
+                        <td class="px-6 py-4 bg-slate-200 rounded-l-lg rounded-r-lg">치과의원</td>
+                        <td class="px-6 py-4 bg-slate-200 rounded-l-lg rounded-r-lg">67</td>
+                    </tr>
+                    <tr class="mt-4 font-bold text-lg">
+                        <td class="px-6 py-4 bg-slate-800 text-white rounded-l-lg rounded-r-lg">총계</td>
+                        <td class="px-6 py-4 bg-slate-800 text-white rounded-l-lg rounded-r-lg">171</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="info-box mt-8">
+            <p><strong>파일 정보</strong></p>
+            <p>파일명: 전라남도 순천시_병원(의원, 한의원, 치과의원) 현황_20210901.csv</p>
+            <p>기준일: 2021년 9월 1일</p>
+        </div>
+    </div>
+</body>
+</html>
